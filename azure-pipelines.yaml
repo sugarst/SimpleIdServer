@@ -34,7 +34,7 @@ steps:
     script: |
       npm install
       npm run build
-    workingDirectory: '$(Build.Repository.LocalPath)\website'
+    workingDirectory: '$(Build.Repository.LocalPath)\docs\website'
 
 - task: DotNetCoreCLI@2
   displayName: 'Publish SimpleIdServer'
@@ -84,7 +84,7 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy website'
   inputs:
-    SourceFolder: '$(Build.Repository.LocalPath)\website\build'
+    SourceFolder: '$(Build.Repository.LocalPath)\docs\website\build'
     Contents: '**'
     TargetFolder: '$(Build.ArtifactStagingDirectory)\website'
 

@@ -1,6 +1,6 @@
 # Simpleidserver core
 
-<img src="images/logo.svg" alt="SimpleIdServer" style="width:200px;"/>
+<img src="assets/images/logo.svg" alt="SimpleIdServer" style="width:200px;"/>
 
 [![Build status](https://ci.appveyor.com/api/projects/status/shtqlxhbda6gtdag?svg=true)](https://ci.appveyor.com/project/simpleidserver/simpleidserver)
 [![Join the chat at https://app.gitter.im/#/room/#simpleidserver:gitter.im](https://badges.gitter.im/repo.svg)](https://app.gitter.im/#/room/#simpleidserver:gitter.im)
@@ -95,7 +95,7 @@ By default, there is one administrator account configured. You can access their 
 
 The IdentityServer UI uses Bootstrap 5.
 
-![IdentityServer](./images/IdentityServer-1.png)
+![IdentityServer](./assets/images/IdentityServer-1.png)
 
 ## Create IdentityServer website project
 
@@ -121,7 +121,7 @@ The website can be used to manage all aspects of an Identity Server solution, su
 
 The IdentityServer website UI uses Radzen.
 
-![IdentityServerWebsite](./images/IdentityServerWebsite-2.png)
+![IdentityServerWebsite](./assets/images/IdentityServerWebsite-2.png)
 
 ## SCIM Security
 
@@ -212,7 +212,7 @@ The CredentialIssuer is now ready to be used.
 
 The CredentialIssuer UI uses Bootstrap 5.
 
-![CredentialIssuer](./images/CredentialIssuer-1.png)
+![CredentialIssuer](./assets/images/CredentialIssuer-1.png)
 
 ## Create credential issuer website project
 
@@ -238,7 +238,7 @@ The website can be used to manage the credential configurations.
 
 The CredentialIssuer website UI uses Radzen.
 
-![CredentialIssuerAdminUi](./images/CredentialIssuer-2.png)
+![CredentialIssuerAdminUi](./assets/images/CredentialIssuer-2.png)
 
 # Running with docker
 
