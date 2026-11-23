@@ -1,8 +1,8 @@
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS runtime
 
 COPY build/results/docker/IdServer/ App/
-COPY compose/certificates/ certificates/
-COPY compose/certificates/ca.cer usr/local/share/ca-certificates/ca.cer
+COPY deploy/compose/certificates/ certificates/
+COPY deploy/compose/certificates/ca.cer usr/local/share/ca-certificates/ca.cer
 
 RUN update-ca-certificates
 

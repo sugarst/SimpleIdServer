@@ -7,10 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="..\..\..\..\certificates\sidClient.crt" Link="sidClient.crt">
+    <None Include="..\..\..\..\deploy\certs\sidClient.crt" Link="sidClient.crt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Include="..\..\..\..\certificates\sidClient.key" Link="sidClient.key">
+    <None Include="..\..\..\..\deploy\certs\sidClient.key" Link="sidClient.key">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

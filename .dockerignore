@@ -1,5 +1,5 @@
 # Build context for eng/docker/*.Dockerfile (context = repository root).
-# IMPORTANT: build/results/ and compose/ are consumed by the Dockerfiles - never exclude them.
+# IMPORTANT: build/results/ and deploy/compose/ are consumed by the Dockerfiles - never exclude them.
 
 .git
 .gitignore

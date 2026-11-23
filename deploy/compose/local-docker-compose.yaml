@@ -8,8 +8,8 @@ services:
     restart: always
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-      - ./compose/certificates:/etc/nginx/certs:ro
-      - ./compose/proxy.conf:/etc/nginx/conf.d/customproxy.conf:ro
+      - ./certificates:/etc/nginx/certs:ro
+      - ./proxy.conf:/etc/nginx/conf.d/customproxy.conf:ro
     networks:
       proxy_net:
         aliases:
@@ -28,7 +28,10 @@ services:
     networks:
       proxy_net: null
   scim:
-    image: simpleidserver/scim:6.0.4
+    build:
+      context: ../..
+      dockerfile: ../../eng/docker/Scim.Dockerfile
+    image: simpleidserver/scim:${TAG}
     environment:
       VIRTUAL_HOST: "scim.localhost.com"
       ASPNETCORE_URLS : "http://*:80"
@@ -40,7 +43,10 @@ services:
     networks:
       proxy_net: null
   idserver:
-    image: simpleidserver/idserver:6.0.4
+    build:
+      context: ../..
+      dockerfile: ../../eng/docker/IdServer.Dockerfile
+    image: simpleidserver/idserver:${TAG}
     environment:
       VIRTUAL_HOST: "idserver.localhost.com"
       ASPNETCORE_URLS : "http://*:80"
@@ -59,7 +65,10 @@ services:
     networks:
       proxy_net: null
   website:
-    image: simpleidserver/website:6.0.4
+    build:
+      context: ../..
+      dockerfile: ../../eng/docker/IdServerWebsite.Dockerfile
+    image: simpleidserver/website:${TAG}
     environment:
       VIRTUAL_HOST: "website.localhost.com"
       ASPNETCORE_URLS : "http://*:80"
@@ -74,7 +83,10 @@ services:
     networks:
       proxy_net: null
   credentialissuer:
-    image: simpleidserver/credentialissuer:6.0.4
+    build:
+      context: ../..
+      dockerfile: ../../eng/docker/CredentialIssuer.Dockerfile
+    image: simpleidserver/credentialissuer:${TAG}
     environment:
       VIRTUAL_HOST: "credentialissuer.localhost.com"
       ASPNETCORE_URLS : "http://*:80"
@@ -86,7 +98,10 @@ services:
     networks:
       proxy_net: null
   credentialissuerwebsite:
-    image: simpleidserver/credentialissuerwebsite:6.0.4
+    build:
+      context: ../..
+      dockerfile: ../../eng/docker/CredentialIssuerWebsite.Dockerfile
+    image: simpleidserver/credentialissuerwebsite:${TAG}
     environment:
       VIRTUAL_HOST: "credentialissuerwebsite.localhost.com"
       ASPNETCORE_URLS : "http://*:80"
