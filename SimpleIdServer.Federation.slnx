@@ -1,0 +1,15 @@
+<Solution>
+  <Folder Name="/01. Core/">
+    <Project Path="src/IdServer/SimpleIdServer.Authority.Federation/SimpleIdServer.Authority.Federation.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.DPoP/SimpleIdServer.DPoP.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Helpers/SimpleIdServer.IdServer.Helpers.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.OpenIdConnect/SimpleIdServer.OpenIdConnect.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.OpenidFederation.Store.EF/SimpleIdServer.OpenidFederation.Store.EF.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.OpenidFederation/SimpleIdServer.OpenidFederation.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.Rp.Federation/SimpleIdServer.Rp.Federation.csproj" />
+  </Folder>
+  <Folder Name="/02. Startup/">
+    <Project Path="src/Federation/SimpleIdServer.Federation.Rp.Startup/SimpleIdServer.Federation.Rp.Startup.csproj" />
+    <Project Path="src/Federation/SimpleIdServer.Federation.Ta.Startup/SimpleIdServer.Federation.Ta.Startup.csproj" />
+  </Folder>
+</Solution>

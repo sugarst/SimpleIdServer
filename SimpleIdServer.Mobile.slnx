@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/01. Libs/">
+    <Project Path="json-ld.net/src/json-ld.net/json-ld.net.csproj" />
+    <Project Path="src/CredentialIssuer/SimpleIdServer.WalletClient/SimpleIdServer.WalletClient.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did.Key/SimpleIdServer.Did.Key.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did/SimpleIdServer.Did.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Vc/SimpleIdServer.Vc.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Vp/SimpleIdServer.Vp.csproj" />
+  </Folder>
+  <Project Path="src/IdServer/SimpleIdServer.IdServer.U2FClient/SimpleIdServer.IdServer.U2FClient.csproj" />
+  <Project Path="src/Mobile/SimpleIdServer.Mobile/SimpleIdServer.Mobile.csproj">
+    <Deploy />
+  </Project>
+</Solution>

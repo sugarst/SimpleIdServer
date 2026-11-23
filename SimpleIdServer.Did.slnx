@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="json-ld.net/src/json-ld.net/json-ld.net.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did.Ethr/SimpleIdServer.Did.Ethr.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did.Key/SimpleIdServer.Did.Key.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did/SimpleIdServer.Did.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Vc/SimpleIdServer.Vc.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Vp/SimpleIdServer.Vp.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/SimpleIdServer.Did.Ethr.Tests/SimpleIdServer.Did.Ethr.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.Did.Key.Tests/SimpleIdServer.Did.Key.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.DID.Tests/SimpleIdServer.DID.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.Vc.Tests/SimpleIdServer.Vc.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RpApi/RpApi.csproj" />
+    <Project Path="src/TaApi/TaApi.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,109 @@
+<Solution>
+  <Folder Name="/00. Core Layer/">
+    <Project Path="src/IdServer/SimpleIdServer.DPoP/SimpleIdServer.DPoP.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Domains/SimpleIdServer.IdServer.Domains.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Helpers/SimpleIdServer.IdServer.Helpers.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.IntegrationEvents/SimpleIdServer.IdServer.IntegrationEvents.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Saml.Idp/SimpleIdServer.IdServer.Saml.Idp.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Saml.Sp/SimpleIdServer.IdServer.Saml.Sp.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Swagger/SimpleIdServer.IdServer.Swagger.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Website/SimpleIdServer.IdServer.Website.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer/SimpleIdServer.IdServer.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.OpenIdConnect/SimpleIdServer.OpenIdConnect.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/01. Scim/">
+    <Project Path="src/Scim/SimpleIdServer.Scim.Client/SimpleIdServer.Scim.Client.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Parser/SimpleIdServer.Scim.Parser.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/02. WsFederation/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.WsFederation/SimpleIdServer.IdServer.WsFederation.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/03. Authentication/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Email/SimpleIdServer.IdServer.Email.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Fido/SimpleIdServer.IdServer.Fido.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Notification.Fcm/SimpleIdServer.IdServer.Notification.Fcm.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Notification.Gotify/SimpleIdServer.IdServer.Notification.Gotify.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Otp/SimpleIdServer.IdServer.Otp.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Pwd/SimpleIdServer.IdServer.Pwd.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Sms/SimpleIdServer.IdServer.Sms.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.U2FClient/SimpleIdServer.IdServer.U2FClient.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.VerifiablePresentation/SimpleIdServer.IdServer.VerifiablePresentation.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/04. Provisioning/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Provisioning.LDAP/SimpleIdServer.IdServer.Provisioning.LDAP.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Provisioning.SCIM/SimpleIdServer.IdServer.Provisioning.SCIM.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/05. Configuration/">
+    <Project Path="src/IdServer/SimpleIdServer.Configuration.Redis/SimpleIdServer.Configuration.Redis.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.Configuration/SimpleIdServer.Configuration.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/06. Did/">
+    <Project Path="json-ld.net/src/json-ld.net/json-ld.net.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did.Key/SimpleIdServer.Did.Key.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Did/SimpleIdServer.Did.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Vc/SimpleIdServer.Vc.csproj" />
+    <Project Path="src/Did/SimpleIdServer.Vp/SimpleIdServer.Vp.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/07. Stores/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Store.EF/SimpleIdServer.IdServer.Store.EF.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Store.SqlSugar/SimpleIdServer.IdServer.Store.SqlSugar.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/08. Forms/">
+    <Project Path="formbuilder/FormBuilder.EF/SidFormBuilder.EF.csproj" />
+    <Project Path="formbuilder/FormBuilder.MySQLMigrations/SidFormBuilder.MySQLMigrations.csproj" />
+    <Project Path="formbuilder/FormBuilder.PostgreMigrations/SidFormBuilder.PostgreMigrations.csproj" />
+    <Project Path="formbuilder/FormBuilder.SqliteMigrations/SidFormBuilder.SqliteMigrations.csproj" />
+    <Project Path="formbuilder/FormBuilder.SqlServerMigrations/SidFormBuilder.SqlServerMigrations.csproj" />
+    <Project Path="formbuilder/FormBuilder.Tailwindcss/SidFormBuilder.Tailwindcss.csproj" />
+    <Project Path="formbuilder/FormBuilder/SidFormBuilder.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/09. OpenidFederation/">
+    <Project Path="src/IdServer/SimpleIdServer.Authority.Federation/SimpleIdServer.Authority.Federation.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Federation/SimpleIdServer.IdServer.Federation.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.OpenidFederation/SimpleIdServer.OpenidFederation.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.Rp.Federation/SimpleIdServer.Rp.Federation.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/10. Dataseeder/">
+    <Project Path="dataseeder/dataseeder/DataSeeder.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/11. OpenTelemetry/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.OpenTelemetry/SimpleIdServer.IdServer.OpenTelemetry.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Website.OpenTelemetry/SimpleIdServer.IdServer.Website.OpenTelemetry.csproj" />
+  </Folder>
+  <Folder Name="/00. Core Layer/12. Migration/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Migrations.Duende/SimpleIdServer.IdServer.Migrations.Duende.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Migrations.Openiddict/SimpleIdServer.IdServer.Migrations.Openiddict.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Migrations/SimpleIdServer.IdServer.Migrations.csproj" />
+  </Folder>
+  <Folder Name="/01. Startup Layer/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.AuthFaker/SimpleIdServer.IdServer.AuthFaker.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.U2F.Sample/SimpleIdServer.U2F.Sample.csproj" />
+  </Folder>
+  <Folder Name="/01. Startup Layer/00. Idserver/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Empty.Startup/SimpleIdServer.IdServer.Empty.Startup.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Light.Startup/SimpleIdServer.IdServer.Light.Startup.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Startup/SimpleIdServer.IdServer.Startup.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Template.Startup/SimpleIdServer.IdServer.Template.Startup.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Ui.Startup/SimpleIdServer.IdServer.Ui.Startup.csproj" />
+  </Folder>
+  <Folder Name="/01. Startup Layer/01. IdserverAdmin/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Website.Startup/SimpleIdServer.IdServer.Website.Startup.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServerAdmin.Empty.Startup/SimpleIdServer.IdServerAdmin.Empty.Startup.csproj" />
+  </Folder>
+  <Folder Name="/02. Migrations/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.MySQLMigrations/SimpleIdServer.IdServer.MySQLMigrations.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.PostgreMigrations/SimpleIdServer.IdServer.PostgreMigrations.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.SqliteMigrations/SimpleIdServer.IdServer.SqliteMigrations.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.SqlServerMigrations/SimpleIdServer.IdServer.SqlServerMigrations.csproj" />
+  </Folder>
+  <Folder Name="/03. Testing Layer/">
+    <Project Path="tests/SimpleIdServer.Configuration.Tests/SimpleIdServer.Configuration.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.IdServer.Host.Acceptance.Tests/SimpleIdServer.IdServer.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.IdServer.Tests/SimpleIdServer.IdServer.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.IdServer.U2FClient.Tests/SimpleIdServer.IdServer.U2FClient.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.OpenidFederation.Tests/SimpleIdServer.OpenidFederation.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.SelfIssuedIdServer.Host.Acceptance.Tests/SimpleIdServer.SelfIdServer.Host.Acceptance.Tests.csproj" />
+  </Folder>
+  <Project Path="SimpleIdServer.Aspire.Startup/SimpleIdServer.Aspire.Startup.AppHost/SimpleIdServer.Aspire.Startup.AppHost.csproj" />
+  <Project Path="SimpleIdServer.Aspire.Startup/SimpleIdServer.Aspire.Startup.ServiceDefaults/SimpleIdServer.Aspire.Startup.ServiceDefaults.csproj" />
+</Solution>

@@ -1,0 +1,29 @@
+<Solution>
+  <Folder Name="/01. Core Layer/">
+    <Project Path="src/Scim/SimpleIdServer.Scim.ApiKeyAuth/SimpleIdServer.Scim.ApiKeyAuth.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Client/SimpleIdServer.Scim.Client.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Domains/SimpleIdServer.Scim.Domains.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.MassTransit/SimpleIdServer.Scim.MassTransit.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Parser/SimpleIdServer.Scim.Parser.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Persistence.EF/SimpleIdServer.Scim.Persistence.EF.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Persistence.MongoDB/SimpleIdServer.Scim.Persistence.MongoDB.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Swashbuckle/SimpleIdServer.Scim.Swashbuckle.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.SwashbuckleV6/SimpleIdServer.Scim.SwashbuckleV6.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim/SimpleIdServer.Scim.csproj" />
+  </Folder>
+  <Folder Name="/02. Starting Layer/">
+    <Project Path="src/Scim/SimpleIdServer.Scim.Benchmark/SimpleIdServer.Scim.Benchmark.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Empty.Startup/SimpleIdServer.Scim.Empty.Startup.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Startup/SimpleIdServer.Scim.Startup.csproj" />
+  </Folder>
+  <Folder Name="/03. Migrations Layer/">
+    <Project Path="src/Scim/SimpleIdServer.Scim.MySQLMigrations/SimpleIdServer.Scim.MySQLMigrations.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.PostgreMigrations/SimpleIdServer.Scim.PostgreMigrations.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.SqliteMigrations/SimpleIdServer.Scim.SqliteMigrations.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.SqlServerMigrations/SimpleIdServer.Scim.SqlServerMigrations.csproj" />
+  </Folder>
+  <Folder Name="/04. Testing Layer/">
+    <Project Path="tests/SimpleIdServer.Scim.Host.Acceptance.Tests/SimpleIdServer.Scim.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.Scim.Tests/SimpleIdServer.Scim.Tests.csproj" />
+  </Folder>
+</Solution>

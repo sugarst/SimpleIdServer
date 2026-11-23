@@ -1,0 +1,45 @@
+<Solution>
+  <Folder Name="/00. Common/">
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Domains/SimpleIdServer.IdServer.Domains.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Helpers/SimpleIdServer.IdServer.Helpers.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.IntegrationEvents/SimpleIdServer.IdServer.IntegrationEvents.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.IdServer.Saml.Sp/SimpleIdServer.IdServer.Saml.Sp.csproj" />
+    <Project Path="src/IdServer/SimpleIdServer.OpenIdConnect/SimpleIdServer.OpenIdConnect.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Client/SimpleIdServer.Scim.Client.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Domains/SimpleIdServer.Scim.Domains.csproj" />
+    <Project Path="src/Scim/SimpleIdServer.Scim.Parser/SimpleIdServer.Scim.Parser.csproj" />
+  </Folder>
+  <Folder Name="/01. Webfinger/">
+    <Project Path="src/Webfinger/SimpleIdServer.Webfinger.Client/SimpleIdServer.Webfinger.Client.csproj" />
+    <Project Path="src/Webfinger/SimpleIdServer.Webfinger.Store.EF/SimpleIdServer.Webfinger.Store.EF.csproj" />
+    <Project Path="src/Webfinger/SimpleIdServer.Webfinger/SimpleIdServer.Webfinger.csproj" />
+  </Folder>
+  <Folder Name="/02. Core/">
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.Authentication.Saml/SimpleIdServer.FastFed.Authentication.Saml.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.Client/SimpleIdServer.FastFed.Client.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.Domains/SimpleIdServer.FastFed.Domains.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.Provisioning.Scim/SimpleIdServer.FastFed.Provisioning.Scim.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.Store.EF/SimpleIdServer.FastFed.Store.EF.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed/SimpleIdServer.FastFed.csproj" />
+  </Folder>
+  <Folder Name="/02. Core/AppProvider/">
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.ApplicationProvider.Authentication.Saml/SimpleIdServer.FastFed.ApplicationProvider.Authentication.Saml.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.ApplicationProvider.Provisioning.Scim/SimpleIdServer.FastFed.ApplicationProvider.Provisioning.Scim.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.ApplicationProvider/SimpleIdServer.FastFed.ApplicationProvider.csproj" />
+  </Folder>
+  <Folder Name="/02. Core/IdProvider/">
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider.Authentication.Saml.Sid/SimpleIdServer.FastFed.IdentityProvider.Authentication.Saml.Sid.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider.Authentication.Saml/SimpleIdServer.FastFed.IdentityProvider.Authentication.Saml.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Sid/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Sid.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider/SimpleIdServer.FastFed.IdentityProvider.csproj" />
+  </Folder>
+  <Folder Name="/03. Startup/">
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.ApplicationProvider.Startup/SimpleIdServer.FastFed.ApplicationProvider.Startup.csproj" />
+    <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider.Startup/SimpleIdServer.FastFed.IdentityProvider.Startup.csproj" />
+  </Folder>
+  <Folder Name="/04. Tests/">
+    <Project Path="tests/SimpleIdServer.FastFed.Host.Acceptance.Tests/SimpleIdServer.FastFed.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests.csproj" />
+  </Folder>
+</Solution>

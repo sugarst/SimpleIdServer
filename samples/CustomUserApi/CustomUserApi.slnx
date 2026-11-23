@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SimpleIdServer.IdServer.Startup/SimpleIdServer.IdServer.Startup.csproj" />
+    <Project Path="src/UserApi/UserApi.csproj" />
+  </Folder>
+</Solution>
