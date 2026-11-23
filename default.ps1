@@ -96,22 +96,22 @@ task buildInstaller {
 	
     New-Item $result_dir\kubernetes -Type Directory
 	
-	Copy-Item -Path $base_dir\scripts\IdServer\Windows\run.ps1 -Destination $result_dir\windows64\IdServer -force
-	Copy-Item -Path $base_dir\scripts\IdServerWebsite\Windows\run.ps1 -Destination $result_dir\windows64\IdServerWebsite -force
-	Copy-Item -Path $base_dir\scripts\Scim\Windows\run.ps1 -Destination $result_dir\windows64\Scim -force
-	Copy-Item -Path $base_dir\scripts\CredentialIssuer\Windows\run.ps1 -Destination $result_dir\windows64\CredentialIssuer -force
-	Copy-Item -Path $base_dir\scripts\CredentialIssuerWebsite\Windows\run.ps1 -Destination $result_dir\windows64\CredentialIssuerWebsite -force
+	Copy-Item -Path $base_dir\eng\scripts\IdServer\Windows\run.ps1 -Destination $result_dir\windows64\IdServer -force
+	Copy-Item -Path $base_dir\eng\scripts\IdServerWebsite\Windows\run.ps1 -Destination $result_dir\windows64\IdServerWebsite -force
+	Copy-Item -Path $base_dir\eng\scripts\Scim\Windows\run.ps1 -Destination $result_dir\windows64\Scim -force
+	Copy-Item -Path $base_dir\eng\scripts\CredentialIssuer\Windows\run.ps1 -Destination $result_dir\windows64\CredentialIssuer -force
+	Copy-Item -Path $base_dir\eng\scripts\CredentialIssuerWebsite\Windows\run.ps1 -Destination $result_dir\windows64\CredentialIssuerWebsite -force
 	
-	Copy-Item -Path $base_dir\scripts\IdServer\Linux\* -Destination $result_dir\linux64\IdServer -recurse -force
-	Copy-Item -Path $base_dir\scripts\IdServerWebsite\Linux\* -Destination $result_dir\linux64\IdServerWebsite -recurse -force
-	Copy-Item -Path $base_dir\scripts\Scim\Linux\* -Destination $result_dir\linux64\Scim -recurse -force	
-	Copy-Item -Path $base_dir\scripts\CredentialIssuer\Linux\* -Destination $result_dir\linux64\CredentialIssuer -recurse -force
-	Copy-Item -Path $base_dir\scripts\CredentialIssuerWebsite\Linux\* -Destination $result_dir\linux64\CredentialIssuerWebsite -recurse -force	
+	Copy-Item -Path $base_dir\eng\scripts\IdServer\Linux\* -Destination $result_dir\linux64\IdServer -recurse -force
+	Copy-Item -Path $base_dir\eng\scripts\IdServerWebsite\Linux\* -Destination $result_dir\linux64\IdServerWebsite -recurse -force
+	Copy-Item -Path $base_dir\eng\scripts\Scim\Linux\* -Destination $result_dir\linux64\Scim -recurse -force	
+	Copy-Item -Path $base_dir\eng\scripts\CredentialIssuer\Linux\* -Destination $result_dir\linux64\CredentialIssuer -recurse -force
+	Copy-Item -Path $base_dir\eng\scripts\CredentialIssuerWebsite\Linux\* -Destination $result_dir\linux64\CredentialIssuerWebsite -recurse -force	
 
 	Copy-Item -Path $base_dir\docker-compose.yml -Destination $result_dir\docker\docker-compose.yml
 	Copy-Item -Path $base_dir\compose -Destination $result_dir\docker -recurse -force
 	
-	Copy-Item -Path $base_dir\sid-kubernetes.yaml -Destination $result_dir\kubernetes -recurse -force
+	Copy-Item -Path $base_dir\deploy\k8s\sid-kubernetes.yaml -Destination $result_dir\kubernetes -recurse -force
 	
 	exec { dotnet publish $source_dir\IdServer\SimpleIdServer.IdServer.Startup\SimpleIdServer.IdServer.Startup.csproj -c $config -o $result_dir\windows64\IdServer\Server -r win-x64 }
 	exec { dotnet publish $source_dir\IdServer\SimpleIdServer.IdServer.Website.Startup\SimpleIdServer.IdServer.Website.Startup.csproj -c $config -o $result_dir\windows64\IdServerWebsite\Server -r win-x64 }

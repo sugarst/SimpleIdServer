@@ -30,7 +30,7 @@ services:
   scim:
     build:
       context: .
-      dockerfile: ./ScimDockerFile
+      dockerfile: ./eng/docker/Scim.Dockerfile
     image: simpleidserver/scim:${TAG}
     environment:
       VIRTUAL_HOST: "scim.localhost.com"
@@ -45,7 +45,7 @@ services:
   idserver:
     build:
       context: .
-      dockerfile: ./IdServer
+      dockerfile: ./eng/docker/IdServer.Dockerfile
     image: simpleidserver/idserver:${TAG}
     environment:
       VIRTUAL_HOST: "idserver.localhost.com"
@@ -67,7 +67,7 @@ services:
   website:
     build:
       context: .
-      dockerfile: ./IdServerWebsite
+      dockerfile: ./eng/docker/IdServerWebsite.Dockerfile
     image: simpleidserver/website:${TAG}
     environment:
       VIRTUAL_HOST: "website.localhost.com"
@@ -85,7 +85,7 @@ services:
   credentialissuer:
     build:
       context: .
-      dockerfile: ./CredentialIssuer
+      dockerfile: ./eng/docker/CredentialIssuer.Dockerfile
     image: simpleidserver/credentialissuer:${TAG}
     environment:
       VIRTUAL_HOST: "credentialissuer.localhost.com"
@@ -100,7 +100,7 @@ services:
   credentialissuerwebsite:
     build:
       context: .
-      dockerfile: ./CredentialIssuerWebsite
+      dockerfile: ./eng/docker/CredentialIssuerWebsite.Dockerfile
     image: simpleidserver/credentialissuerwebsite:${TAG}
     environment:
       VIRTUAL_HOST: "credentialissuerwebsite.localhost.com"

@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# Helper script for those who want to run psake from a POSIX shell.
+# The psake engine lives in eng/psake; the build definition is default.ps1 at the repository root.
+
 # Use greadlink on macOS.
 if [ "$(uname)" = "Darwin" ]; then
   which greadlink > /dev/null || {
@@ -9,4 +12,6 @@ if [ "$(uname)" = "Darwin" ]; then
   alias readlink="greadlink"
 fi
 
-pwsh -NoProfile -Command "& $(dirname "$(readlink -f -- "$0")")/psake.ps1 $@"
+ROOT_DIR="$(dirname "$(readlink -f -- "$0")")"
+
+pwsh -NoProfile -Command "& '$ROOT_DIR/eng/psake/psake.ps1' -buildFile '$ROOT_DIR/default.ps1' $@"
