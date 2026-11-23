@@ -64,7 +64,7 @@
     <Project Path="src/IdServer/SimpleIdServer.Rp.Federation/SimpleIdServer.Rp.Federation.csproj" />
   </Folder>
   <Folder Name="/00. Core Layer/10. Dataseeder/">
-    <Project Path="dataseeder/dataseeder/DataSeeder.csproj" />
+    <Project Path="dataseeder/DataSeeder.csproj" />
   </Folder>
   <Folder Name="/00. Core Layer/11. OpenTelemetry/">
     <Project Path="src/IdServer/SimpleIdServer.IdServer.OpenTelemetry/SimpleIdServer.IdServer.OpenTelemetry.csproj" />

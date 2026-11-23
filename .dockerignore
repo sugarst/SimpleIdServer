@@ -1,0 +1,20 @@
+# Build context for eng/docker/*.Dockerfile (context = repository root).
+# IMPORTANT: build/results/ and compose/ are consumed by the Dockerfiles - never exclude them.
+
+.git
+.gitignore
+.gitattributes
+.github
+.vs
+.vscode
+**/bin
+**/obj
+**/node_modules
+website
+docs
+tests
+samples
+json-ld.net
+*.user
+*.suo
+*.log

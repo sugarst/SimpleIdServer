@@ -313,7 +313,7 @@ task pack -depends release, compile, buildTemplate {
 	exec { dotnet pack $base_dir\formbuilder\FormBuilder.SqlServerMigrations\SidFormBuilder.SqlServerMigrations.csproj -c $config --output $result_dir }	
 	exec { dotnet pack $base_dir\formbuilder\FormBuilder.Tailwindcss\SidFormBuilder.Tailwindcss.csproj -c $config --output $result_dir }	
 	
-	exec { dotnet pack $base_dir\dataseeder\dataseeder\DataSeeder.csproj -c $config --output $result_dir }
+	exec { dotnet pack $base_dir\dataseeder\DataSeeder.csproj -c $config --output $result_dir }
 	
 	exec { dotnet pack $source_dir\Templates\SimpleIdServer.Templates.csproj -c $config --output $result_dir }
 }

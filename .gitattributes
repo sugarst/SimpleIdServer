@@ -1,0 +1,26 @@
+# Normalize line endings on commit, but let each OS keep its native form on checkout.
+* text=auto
+
+# Binary assets must never be converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+*.pfx binary
+*.p12 binary
+*.cer binary
+*.crt text
+*.zip binary
+*.dll binary
+*.exe binary
+
+# Solution files: plain XML, keep them diffable.
+*.slnx text eol=crlf
+*.sln text eol=crlf
+
+# Shell scripts must keep LF so they stay executable on Linux/macOS.
+*.sh text eol=lf
+idserver.sh text eol=lf
+psake text eol=lf
