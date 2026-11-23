@@ -69,7 +69,7 @@ function dockerBuild {
     dotnet publish "$source_dir/CredentialIssuer/SimpleIdServer.CredentialIssuer.Startup/SimpleIdServer.CredentialIssuer.Startup.csproj" -c "$config" -o "$result_dir/docker/CredentialIssuer" --nologo
     dotnet publish "$source_dir/CredentialIssuer/SimpleIdServer.CredentialIssuer.Website.Startup/SimpleIdServer.CredentialIssuer.Website.Startup.csproj" -c "$config" -o "$result_dir/docker/CredentialIssuerWebsite" --nologo
 
-    docker compose -f "$base_dir/local-docker-compose.yml" build --no-cache
+    docker compose -f "$base_dir/local-docker-compose.yaml" build --no-cache
 }
 
 function dockerUp() {
@@ -77,25 +77,25 @@ function dockerUp() {
 
     echo "Running Docker containers with version: $TAG"
 
-    docker compose -f "$base_dir/local-docker-compose.yml" up -d
+    docker compose -f "$base_dir/local-docker-compose.yaml" up -d
 }
 
 function dockerDown() {
     echo "Deleting Docker containers"
 
-    docker compose -f "$base_dir/local-docker-compose.yml" down
+    docker compose -f "$base_dir/local-docker-compose.yaml" down
 }
 
 function dockerStart() {
     echo "Starting Docker containers"
 
-    docker compose -f "$base_dir/local-docker-compose.yml" start
+    docker compose -f "$base_dir/local-docker-compose.yaml" start
 }
 
 function dockerStop() {
     echo "Stopping Docker containers"
 
-    docker compose -f "$base_dir/local-docker-compose.yml" stop
+    docker compose -f "$base_dir/local-docker-compose.yaml" stop
 }
 
 function help() {

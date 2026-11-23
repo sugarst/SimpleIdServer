@@ -90,7 +90,7 @@ OpenTelemetry exporter、Hangfire 定时任务、MassTransit 集成事件、Swag
 
 当前主分支版本为 **7.0.0-rc2**。上游在 2026 年初做过一次整体升级，把 182 个项目从 `net8.0` 切到 `net10.0`（.NET 10 LTS），并同步升级了 FIDO 相关依赖。
 
-最快的上手方式是模板：先执行 `dotnet new install SimpleIdServer.Templates`，再用 `dotnet new idserver` 生成服务器；`docker-compose.yml` 里已经配好 SQL Server、IdServer、SCIM、管理网站与凭证颁发器的组合，可以直接起一套本地环境。CI 侧有 psake 脚本与 Azure Pipelines 配置。
+最快的上手方式是模板：先执行 `dotnet new install SimpleIdServer.Templates`，再用 `dotnet new idserver` 生成服务器；`docker-compose.yaml` 里已经配好 SQL Server、IdServer、SCIM、管理网站与凭证颁发器的组合，可以直接起一套本地环境。CI 侧有 psake 脚本与 Azure Pipelines 配置。
 
 > **落地前建议确认三点**：一是依赖版本跨度较大，ASP.NET Core 与 EF Core 的 7.x、8.x、9.x 与 10.0 包在仓库里共存，大规模升级前建议先做依赖图收敛与多数据库回归；二是 DID / VC 相关解决方案依赖 `json-ld.net` 子模块，克隆时要带子模块；三是 MAUI 钱包需要安装对应工作负载才能构建。
 

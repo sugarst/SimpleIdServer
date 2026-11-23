@@ -67,11 +67,11 @@ task dockerBuild -depends clean {
 	exec { dotnet publish $source_dir\Scim\SimpleIdServer.Scim.Startup\SimpleIdServer.Scim.Startup.csproj -c $config -o $result_dir\docker\Scim }
 	exec { dotnet publish $source_dir\CredentialIssuer\SimpleIdServer.CredentialIssuer.Startup\SimpleIdServer.CredentialIssuer.Startup.csproj -c $config -o $result_dir\docker\CredentialIssuer }
 	exec { dotnet publish $source_dir\CredentialIssuer\SimpleIdServer.CredentialIssuer.Website.Startup\SimpleIdServer.CredentialIssuer.Website.Startup.csproj -c $config -o $result_dir\docker\CredentialIssuerWebsite }	
-	exec { iex "$composeCmd -f local-docker-compose.yml build --no-cache" }
+	exec { iex "$composeCmd -f local-docker-compose.yaml build --no-cache" }
 }
 
 task dockerPublish -depends dockerBuild {
-	{ exec docker-compose -f local-docker-compose.yml push }
+	{ exec docker-compose -f local-docker-compose.yaml push }
 }
 
 task dockerUp {
@@ -108,7 +108,7 @@ task buildInstaller {
 	Copy-Item -Path $base_dir\eng\scripts\CredentialIssuer\Linux\* -Destination $result_dir\linux64\CredentialIssuer -recurse -force
 	Copy-Item -Path $base_dir\eng\scripts\CredentialIssuerWebsite\Linux\* -Destination $result_dir\linux64\CredentialIssuerWebsite -recurse -force	
 
-	Copy-Item -Path $base_dir\docker-compose.yml -Destination $result_dir\docker\docker-compose.yml
+	Copy-Item -Path $base_dir\docker-compose.yaml -Destination $result_dir\docker\docker-compose.yaml
 	Copy-Item -Path $base_dir\compose -Destination $result_dir\docker -recurse -force
 	
 	Copy-Item -Path $base_dir\deploy\k8s\sid-kubernetes.yaml -Destination $result_dir\kubernetes -recurse -force
