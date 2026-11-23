@@ -5,10 +5,10 @@
 		<ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
 	</PropertyGroup>
 	<ItemGroup>
-	  <ProjectReference Include="..\..\..\formbuilder\FormBuilder.MySQLMigrations\SidFormBuilder.MySQLMigrations.csproj" />
-	  <ProjectReference Include="..\..\..\formbuilder\FormBuilder.PostgreMigrations\SidFormBuilder.PostgreMigrations.csproj" />
-	  <ProjectReference Include="..\..\..\formbuilder\FormBuilder.SqliteMigrations\SidFormBuilder.SqliteMigrations.csproj" />
-	  <ProjectReference Include="..\..\..\formbuilder\FormBuilder.SqlServerMigrations\SidFormBuilder.SqlServerMigrations.csproj" />
+	  <ProjectReference Include="..\..\..\src\FormBuilder\FormBuilder.MySQLMigrations\SidFormBuilder.MySQLMigrations.csproj" />
+	  <ProjectReference Include="..\..\..\src\FormBuilder\FormBuilder.PostgreMigrations\SidFormBuilder.PostgreMigrations.csproj" />
+	  <ProjectReference Include="..\..\..\src\FormBuilder\FormBuilder.SqliteMigrations\SidFormBuilder.SqliteMigrations.csproj" />
+	  <ProjectReference Include="..\..\..\src\FormBuilder\FormBuilder.SqlServerMigrations\SidFormBuilder.SqlServerMigrations.csproj" />
 	  <ProjectReference Include="..\..\Did\SimpleIdServer.Did.Key\SimpleIdServer.Did.Key.csproj" />
 	  <ProjectReference Include="..\SimpleIdServer.Configuration.Redis\SimpleIdServer.Configuration.Redis.csproj" />
 	  <ProjectReference Include="..\SimpleIdServer.IdServer.Email\SimpleIdServer.IdServer.Email.csproj" />
