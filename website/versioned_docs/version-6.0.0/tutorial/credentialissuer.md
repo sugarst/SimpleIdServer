@@ -56,7 +56,7 @@ Create and configure the credential issuer API.
 mkdir CredentialIssuer
 cd CredentialIssuer
 mkdir src
-dotnet new sln -n CredentialIssuer
+dotnet new sln --format slnx -n CredentialIssuer
 ```
 
 2. Use the SimpleIderver template to create the credential issuer project :

@@ -147,7 +147,7 @@ Create and configure the trust anchor project.
 mkdir OpenidFederation
 cd OpenidFederation
 mkdir src
-dotnet new sln -n OpenidFederation
+dotnet new sln --format slnx -n OpenidFederation
 ```
 
 2. Create a REST.API project named `TaApi` and install the Nuget packages `SimpleIdServer.Authority.Federation` and `SimpleIdServer.OpenidFederation.Store.EF`.

@@ -54,7 +54,7 @@ Finally, create and configure a console application.
 mkdir DeviceUseCIBA
 cd DeviceUseCIBA
 mkdir src
-dotnet new sln -n DeviceUseCIBA
+dotnet new sln --format slnx -n DeviceUseCIBA
 ```
 
 2. Create a web project named `ConsoleApp` and install the `IdentityModel` NuGet package.

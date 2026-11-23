@@ -62,7 +62,7 @@ Finally, create and configure a Console Application project.
 mkdir RequestAccessTokenM2M
 cd RequestAccessTokenM2M
 mkdir src
-dotnet new sln -n RequestAccessTokenM2M
+dotnet new sln --format slnx -n RequestAccessTokenM2M
 ```
 
 2. Create a console application project named `ConsoleApp` 

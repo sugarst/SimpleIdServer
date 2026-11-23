@@ -39,7 +39,7 @@ Finally, create and configure an Angular project.
 mkdir ProjectSPA
 cd ProjectSPA
 mkdir src
-dotnet new sln -n ProjectSPA
+dotnet new sln --format slnx -n ProjectSPA
 ```
 
 2. Create a web project named `Website` and install the `angular-oauth2-oidc` npm package.

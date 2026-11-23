@@ -103,7 +103,7 @@ Create and configure the first REST.API service
 mkdir Delegation
 cd Delegation
 mkdir src
-dotnet new sln -n Delegation
+dotnet new sln --format slnx -n Delegation
 ```
 
 2. Create a REST.API project named `ShopApiOther` and install the `Microsoft.AspNetCore.Authentication.JwtBearer` Nuget package.

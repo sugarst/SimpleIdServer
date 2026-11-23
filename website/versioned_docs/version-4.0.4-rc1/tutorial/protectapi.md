@@ -53,7 +53,7 @@ Finally, create and configure a REST.API Service.
 mkdir ProtectRESTApiJWT
 cd ProtectRESTApiJWT
 mkdir src
-dotnet new sln -n ProtectRESTApiJWT
+dotnet new sln --format slnx -n ProtectRESTApiJWT
 ```
 
 2. Create a REST.API project named `ShopApi` and install the `Microsoft.AspNetCore.Authentication.JwtBearer` Nuget package.

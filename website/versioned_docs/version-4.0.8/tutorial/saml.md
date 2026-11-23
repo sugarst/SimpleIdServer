@@ -37,7 +37,7 @@ Finally, create and configure an ASP.NET CORE Application.
 mkdir SamlRpWebsite
 cd SamlRpWebsite
 mkdir src
-dotnet new sln -n SamlRpWebsite
+dotnet new sln --format slnx -n SamlRpWebsite
 ```
 
 2. Create a web project named `Website` and install the `SimpleIdServer.IdServer.Saml.Sp` NuGet package.

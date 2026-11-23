@@ -102,7 +102,7 @@ Follow these steps to create and configure the FastFed application provider:
 mkdir FastFed
 cd FastFed
 mkdir src
-dotnet new sln -n FastFed
+dotnet new sln --format slnx -n FastFed
 ```
 
 2. Create a web project named `FastFedApplicationProvider` with OpenID FastFed configured:

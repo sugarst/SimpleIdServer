@@ -99,7 +99,7 @@ Create and configure an Account Info REST.API Service.
 mkdir FapiGrantManagement
 cd FapiGrantManagement
 mkdir src
-dotnet new sln -n FapiGrantManagement
+dotnet new sln --format slnx -n FapiGrantManagement
 ```
 
 2. Create a web project named `AccountInfoApi` and install the `Microsoft.AspNetCore.Authentication.JwtBearer` NuGet package.

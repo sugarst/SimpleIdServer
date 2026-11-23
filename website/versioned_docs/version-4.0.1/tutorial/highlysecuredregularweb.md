@@ -65,7 +65,7 @@ Finally, create and configure an ASP.NET CORE Application.
 mkdir HighlySecuredServersideWebsite
 cd HighlySecuredServersideWebsite
 mkdir src
-dotnet new sln -n HighlySecuredServersideWebsite
+dotnet new sln --format slnx -n HighlySecuredServersideWebsite
 ```
 
 :::info

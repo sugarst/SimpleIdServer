@@ -43,7 +43,7 @@ Finally, create and configure an ASP.NET CORE Application.
 mkdir ProtectWebsiteServerside
 cd ProtectWebsiteServerside
 mkdir src
-dotnet new sln -n ProtectWebsiteServerside
+dotnet new sln --format slnx -n ProtectWebsiteServerside
 ```
 
 2. Create a web project named `Website` and install the `Microsoft.AspNetCore.Authentication.OpenIdConnect` NuGet package.

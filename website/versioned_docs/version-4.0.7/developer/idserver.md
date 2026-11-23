@@ -16,7 +16,7 @@ Open a command prompt and execute the following commands to create the directory
 mkdir IdentityService
 cd IdentityService
 mkdir src
-dotnet new sln -n IdentityService
+dotnet new sln --format slnx -n IdentityService
 ```
 
 Create a web project named IdentityService and install the  `SimpleIdServer.IdServer`,  `SimpleIdServer.IdServer.Pwd`, `SimpleIdServer.Configuration` Nuget packages.

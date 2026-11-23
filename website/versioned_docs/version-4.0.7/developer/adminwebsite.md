@@ -14,7 +14,7 @@ Open a command prompt and execute the following commands to create the directory
 mkdir AdminWebsite
 cd AdminWebsite
 mkdir src
-dotnet new sln -n AdminWebsite
+dotnet new sln --format slnx -n AdminWebsite
 ```
 
 Create a web project named AdminWebsite and install the `SimpleIdServer.IdServer.Website` Nuget Package.

@@ -168,13 +168,13 @@ task compile -depends clean {
 
 	exec { dotnet msbuild -version }
 	
-	exec { dotnet build $base_dir\json-ld.net\JsonLD.sln -c $config --version-suffix=$buildSuffix }
-    exec { dotnet build .\SimpleIdServer.IdServer.Host.sln -c $config --version-suffix=$buildSuffix }
-    exec { dotnet build .\SimpleIdServer.Scim.Host.sln -c $config --version-suffix=$buildSuffix }
-	exec { dotnet build .\SimpleIdServer.Did.sln -c $config --version-suffix=$buildSuffix }
-	exec { dotnet build .\SimpleIdServer.CredentialIssuer.Host.sln -c $config --version-suffix=$buildSuffix }
-	exec { dotnet build .\SimpleIdServer.Federation.sln -c $config --version-suffix=$buildSuffix }
-	exec { dotnet build .\SimpleIdServer.FastFed.sln -c $config --version-suffix=$buildSuffix }
+	exec { dotnet build $base_dir\json-ld.net\src\json-ld.net\json-ld.net.csproj -c $config --version-suffix=$buildSuffix }
+    exec { dotnet build .\SimpleIdServer.IdServer.Host.slnx -c $config --version-suffix=$buildSuffix }
+    exec { dotnet build .\SimpleIdServer.Scim.Host.slnx -c $config --version-suffix=$buildSuffix }
+	exec { dotnet build .\SimpleIdServer.Did.slnx -c $config --version-suffix=$buildSuffix }
+	exec { dotnet build .\SimpleIdServer.CredentialIssuer.Host.slnx -c $config --version-suffix=$buildSuffix }
+	exec { dotnet build .\SimpleIdServer.Federation.slnx -c $config --version-suffix=$buildSuffix }
+	exec { dotnet build .\SimpleIdServer.FastFed.slnx -c $config --version-suffix=$buildSuffix }
 	exec { dotnet build "$source_dir/Templates/SimpleIdServer.Templates.csproj" -c $config --version-suffix=$buildSuffix }
 }
 

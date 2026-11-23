@@ -43,11 +43,11 @@ function clean() {
 function compile() {
     clean
 
-    dotnet build "$base_dir/json-ld.net/JsonLD.sln" -c "$config" --nologo
-    dotnet build "$base_dir/SimpleIdServer.IdServer.Host.sln" -c "$config" --nologo
-    dotnet build "$base_dir/SimpleIdServer.Scim.Host.sln" -c "$config" --nologo
-    dotnet build "$base_dir/SimpleIdServer.Did.sln" -c "$config" --nologo
-    dotnet build "$base_dir/SimpleIdServer.CredentialIssuer.Host.sln" -c "$config" --nologo
+    dotnet build "$base_dir/json-ld.net/src/json-ld.net/json-ld.net.csproj" -c "$config" --nologo
+    dotnet build "$base_dir/SimpleIdServer.IdServer.Host.slnx" -c "$config" --nologo
+    dotnet build "$base_dir/SimpleIdServer.Scim.Host.slnx" -c "$config" --nologo
+    dotnet build "$base_dir/SimpleIdServer.Did.slnx" -c "$config" --nologo
+    dotnet build "$base_dir/SimpleIdServer.CredentialIssuer.Host.slnx" -c "$config" --nologo
 }
 
 function setDockerTag() {

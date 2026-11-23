@@ -32,7 +32,7 @@ Finally, create and configure an ASP.NET CORE Application.
 mkdir WsFederationWebsite
 cd WsFederationWebsite
 mkdir src
-dotnet new sln -n WsFederationWebsite
+dotnet new sln --format slnx -n WsFederationWebsite
 ```
 
 2. Create a web project named `Website` and install the `Microsoft.AspNetCore.Authentication.WsFederation` NuGet package.

@@ -22,7 +22,7 @@ Open a command prompt and execute the following commands to create the directory
 mkdir Quickstart
 cd Quickstart
 mkdir src
-dotnet new sln -n Quickstart
+dotnet new sln --format slnx -n Quickstart
 ```
 
 ## Create IdentityServer project
