@@ -306,13 +306,13 @@ task pack -depends release, compile, buildTemplate {
 	exec { dotnet pack $source_dir\FastFed\SimpleIdServer.FastFed.Provisioning.Scim\SimpleIdServer.FastFed.Provisioning.Scim.csproj -c $config --output $result_dir }
 	exec { dotnet pack $source_dir\FastFed\SimpleIdServer.FastFed.Store.EF\SimpleIdServer.FastFed.Store.EF.csproj -c $config --output $result_dir }
 		
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder\SidFormBuilder.csproj -c $config --output $result_dir }
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder.EF\SidFormBuilder.EF.csproj -c $config --output $result_dir }
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder.MySQLMigrations\SidFormBuilder.MySQLMigrations.csproj -c $config --output $result_dir }
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder.PostgreMigrations\SidFormBuilder.PostgreMigrations.csproj -c $config --output $result_dir }
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder.SqliteMigrations\SidFormBuilder.SqliteMigrations.csproj -c $config --output $result_dir }
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder.SqlServerMigrations\SidFormBuilder.SqlServerMigrations.csproj -c $config --output $result_dir }	
-	exec { dotnet pack $base_dir\formbuilder\FormBuilder.Tailwindcss\SidFormBuilder.Tailwindcss.csproj -c $config --output $result_dir }	
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder\SidFormBuilder.csproj -c $config --output $result_dir }
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder.EF\SidFormBuilder.EF.csproj -c $config --output $result_dir }
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder.MySQLMigrations\SidFormBuilder.MySQLMigrations.csproj -c $config --output $result_dir }
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder.PostgreMigrations\SidFormBuilder.PostgreMigrations.csproj -c $config --output $result_dir }
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder.SqliteMigrations\SidFormBuilder.SqliteMigrations.csproj -c $config --output $result_dir }
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder.SqlServerMigrations\SidFormBuilder.SqlServerMigrations.csproj -c $config --output $result_dir }	
+	exec { dotnet pack $base_dir\src\FormBuilder\FormBuilder.Tailwindcss\SidFormBuilder.Tailwindcss.csproj -c $config --output $result_dir }	
 	
 	exec { dotnet pack $base_dir\dataseeder\DataSeeder.csproj -c $config --output $result_dir }
 	
@@ -320,7 +320,7 @@ task pack -depends release, compile, buildTemplate {
 }
 
 task test {
-	Push-Location -Path $base_dir\tests\SimpleIdServer.Configuration.Tests
+	Push-Location -Path $base_dir\tests\Common\SimpleIdServer.Configuration.Tests
 	
 	try {
 	    exec { & dotnet test -c $config --no-build --no-restore }
@@ -328,7 +328,7 @@ task test {
 	    Pop-Location
 	}
 	
-	Push-Location -Path $base_dir\tests\SimpleIdServer.CredentialIssuer.Host.Acceptance.Tests
+	Push-Location -Path $base_dir\tests\CredentialIssuer\SimpleIdServer.CredentialIssuer.Host.Acceptance.Tests
 	
 	try {
 	    exec { & dotnet test -c $config --no-build --no-restore }
@@ -336,7 +336,7 @@ task test {
 	    Pop-Location
 	}
 	
-	Push-Location -Path $base_dir\tests\SimpleIdServer.Did.Ethr.Tests
+	Push-Location -Path $base_dir\tests\Did\SimpleIdServer.Did.Ethr.Tests
 	
 	try {
 	    exec { & dotnet test -c $config --no-build --no-restore }
@@ -344,7 +344,7 @@ task test {
 	    Pop-Location
 	}
 	
-	Push-Location -Path $base_dir\tests\SimpleIdServer.Did.Key.Tests
+	Push-Location -Path $base_dir\tests\Did\SimpleIdServer.Did.Key.Tests
 	
 	try {
 	    exec { & dotnet test -c $config --no-build --no-restore }
@@ -352,7 +352,7 @@ task test {
 	    Pop-Location
 	}
 	
-	Push-Location -Path $base_dir\tests\SimpleIdServer.DID.Tests
+	Push-Location -Path $base_dir\tests\Did\SimpleIdServer.DID.Tests
 	
 	try {
 	    exec { & dotnet test -c $config --no-build --no-restore }
@@ -360,7 +360,7 @@ task test {
 	    Pop-Location
 	}
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.IdServer.Host.Acceptance.Tests
+    Push-Location -Path $base_dir\tests\IdServer\SimpleIdServer.IdServer.Host.Acceptance.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -368,7 +368,7 @@ task test {
         Pop-Location
     }
 	
-    Push-Location -Path $base_dir\tests\SimpleIdServer.IdServer.Tests
+    Push-Location -Path $base_dir\tests\IdServer\SimpleIdServer.IdServer.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -376,7 +376,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.Scim.Host.Acceptance.Tests
+    Push-Location -Path $base_dir\tests\Scim\SimpleIdServer.Scim.Host.Acceptance.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -384,7 +384,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.Scim.Tests
+    Push-Location -Path $base_dir\tests\Scim\SimpleIdServer.Scim.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -392,7 +392,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.Vc.Tests
+    Push-Location -Path $base_dir\tests\Did\SimpleIdServer.Vc.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -400,7 +400,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.OpenidFederation.Tests
+    Push-Location -Path $base_dir\tests\Common\SimpleIdServer.OpenidFederation.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -408,7 +408,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.FastFed.Host.Acceptance.Tests
+    Push-Location -Path $base_dir\tests\FastFed\SimpleIdServer.FastFed.Host.Acceptance.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -416,7 +416,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\tests\SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests
+    Push-Location -Path $base_dir\tests\FastFed\SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }
@@ -424,7 +424,7 @@ task test {
         Pop-Location
     }
 
-    Push-Location -Path $base_dir\formbuilder\FormBuilder.Tests
+    Push-Location -Path $base_dir\src\FormBuilder\FormBuilder.Tests
 
     try {
         exec { & dotnet test -c $config --no-build --no-restore }

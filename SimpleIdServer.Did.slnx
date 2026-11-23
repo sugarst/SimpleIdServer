@@ -8,9 +8,9 @@
     <Project Path="src/Did/SimpleIdServer.Vp/SimpleIdServer.Vp.csproj" />
   </Folder>
   <Folder Name="/tests/">
-    <Project Path="tests/SimpleIdServer.Did.Ethr.Tests/SimpleIdServer.Did.Ethr.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.Did.Key.Tests/SimpleIdServer.Did.Key.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.DID.Tests/SimpleIdServer.DID.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.Vc.Tests/SimpleIdServer.Vc.Tests.csproj" />
+    <Project Path="tests/Did/SimpleIdServer.Did.Ethr.Tests/SimpleIdServer.Did.Ethr.Tests.csproj" />
+    <Project Path="tests/Did/SimpleIdServer.Did.Key.Tests/SimpleIdServer.Did.Key.Tests.csproj" />
+    <Project Path="tests/Did/SimpleIdServer.DID.Tests/SimpleIdServer.DID.Tests.csproj" />
+    <Project Path="tests/Did/SimpleIdServer.Vc.Tests/SimpleIdServer.Vc.Tests.csproj" />
   </Folder>
 </Solution>

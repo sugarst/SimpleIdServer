@@ -49,13 +49,13 @@
     <Project Path="src/IdServer/SimpleIdServer.IdServer.Store.SqlSugar/SimpleIdServer.IdServer.Store.SqlSugar.csproj" />
   </Folder>
   <Folder Name="/00. Core Layer/08. Forms/">
-    <Project Path="formbuilder/FormBuilder.EF/SidFormBuilder.EF.csproj" />
-    <Project Path="formbuilder/FormBuilder.MySQLMigrations/SidFormBuilder.MySQLMigrations.csproj" />
-    <Project Path="formbuilder/FormBuilder.PostgreMigrations/SidFormBuilder.PostgreMigrations.csproj" />
-    <Project Path="formbuilder/FormBuilder.SqliteMigrations/SidFormBuilder.SqliteMigrations.csproj" />
-    <Project Path="formbuilder/FormBuilder.SqlServerMigrations/SidFormBuilder.SqlServerMigrations.csproj" />
-    <Project Path="formbuilder/FormBuilder.Tailwindcss/SidFormBuilder.Tailwindcss.csproj" />
-    <Project Path="formbuilder/FormBuilder/SidFormBuilder.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder.EF/SidFormBuilder.EF.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder.MySQLMigrations/SidFormBuilder.MySQLMigrations.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder.PostgreMigrations/SidFormBuilder.PostgreMigrations.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder.SqliteMigrations/SidFormBuilder.SqliteMigrations.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder.SqlServerMigrations/SidFormBuilder.SqlServerMigrations.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder.Tailwindcss/SidFormBuilder.Tailwindcss.csproj" />
+    <Project Path="src/FormBuilder/FormBuilder/SidFormBuilder.csproj" />
   </Folder>
   <Folder Name="/00. Core Layer/09. OpenidFederation/">
     <Project Path="src/IdServer/SimpleIdServer.Authority.Federation/SimpleIdServer.Authority.Federation.csproj" />
@@ -97,13 +97,13 @@
     <Project Path="src/IdServer/SimpleIdServer.IdServer.SqlServerMigrations/SimpleIdServer.IdServer.SqlServerMigrations.csproj" />
   </Folder>
   <Folder Name="/03. Testing Layer/">
-    <Project Path="tests/SimpleIdServer.Configuration.Tests/SimpleIdServer.Configuration.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.IdServer.Host.Acceptance.Tests/SimpleIdServer.IdServer.Host.Acceptance.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.IdServer.Tests/SimpleIdServer.IdServer.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.IdServer.U2FClient.Tests/SimpleIdServer.IdServer.U2FClient.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.OpenidFederation.Tests/SimpleIdServer.OpenidFederation.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.SelfIssuedIdServer.Host.Acceptance.Tests/SimpleIdServer.SelfIdServer.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/Common/SimpleIdServer.Configuration.Tests/SimpleIdServer.Configuration.Tests.csproj" />
+    <Project Path="tests/IdServer/SimpleIdServer.IdServer.Host.Acceptance.Tests/SimpleIdServer.IdServer.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/IdServer/SimpleIdServer.IdServer.Tests/SimpleIdServer.IdServer.Tests.csproj" />
+    <Project Path="tests/IdServer/SimpleIdServer.IdServer.U2FClient.Tests/SimpleIdServer.IdServer.U2FClient.Tests.csproj" />
+    <Project Path="tests/Common/SimpleIdServer.OpenidFederation.Tests/SimpleIdServer.OpenidFederation.Tests.csproj" />
+    <Project Path="tests/IdServer/SimpleIdServer.SelfIssuedIdServer.Host.Acceptance.Tests/SimpleIdServer.SelfIdServer.Host.Acceptance.Tests.csproj" />
   </Folder>
-  <Project Path="SimpleIdServer.Aspire.Startup/SimpleIdServer.Aspire.Startup.AppHost/SimpleIdServer.Aspire.Startup.AppHost.csproj" />
-  <Project Path="SimpleIdServer.Aspire.Startup/SimpleIdServer.Aspire.Startup.ServiceDefaults/SimpleIdServer.Aspire.Startup.ServiceDefaults.csproj" />
+  <Project Path="src/Aspire/SimpleIdServer.Aspire.Startup.AppHost/SimpleIdServer.Aspire.Startup.AppHost.csproj" />
+  <Project Path="src/Aspire/SimpleIdServer.Aspire.Startup.ServiceDefaults/SimpleIdServer.Aspire.Startup.ServiceDefaults.csproj" />
 </Solution>

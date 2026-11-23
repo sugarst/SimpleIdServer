@@ -23,7 +23,7 @@
     <Project Path="src/Scim/SimpleIdServer.Scim.SqlServerMigrations/SimpleIdServer.Scim.SqlServerMigrations.csproj" />
   </Folder>
   <Folder Name="/04. Testing Layer/">
-    <Project Path="tests/SimpleIdServer.Scim.Host.Acceptance.Tests/SimpleIdServer.Scim.Host.Acceptance.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.Scim.Tests/SimpleIdServer.Scim.Tests.csproj" />
+    <Project Path="tests/Scim/SimpleIdServer.Scim.Host.Acceptance.Tests/SimpleIdServer.Scim.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/Scim/SimpleIdServer.Scim.Tests/SimpleIdServer.Scim.Tests.csproj" />
   </Folder>
 </Solution>

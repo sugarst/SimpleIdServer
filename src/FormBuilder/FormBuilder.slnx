@@ -1,0 +1,14 @@
+<Solution>
+  <Folder Name="/01. Migrations/">
+    <Project Path="FormBuilder.MySQLMigrations/SidFormBuilder.MySQLMigrations.csproj" />
+    <Project Path="FormBuilder.PostgreMigrations/SidFormBuilder.PostgreMigrations.csproj" />
+    <Project Path="FormBuilder.SqliteMigrations/SidFormBuilder.SqliteMigrations.csproj" />
+    <Project Path="FormBuilder.SqlServerMigrations/SidFormBuilder.SqlServerMigrations.csproj" />
+  </Folder>
+  <Project Path="../../dataseeder/DataSeeder.csproj" />
+  <Project Path="FormBuilder.EF/SidFormBuilder.EF.csproj" />
+  <Project Path="FormBuilder.Startup/SidFormBuilder.Startup.csproj" />
+  <Project Path="FormBuilder.Tailwindcss/SidFormBuilder.Tailwindcss.csproj" />
+  <Project Path="FormBuilder.Tests/SidFormBuilder.Tests.csproj" />
+  <Project Path="FormBuilder/SidFormBuilder.csproj" />
+</Solution>

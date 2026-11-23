@@ -39,7 +39,7 @@
     <Project Path="src/FastFed/SimpleIdServer.FastFed.IdentityProvider.Startup/SimpleIdServer.FastFed.IdentityProvider.Startup.csproj" />
   </Folder>
   <Folder Name="/04. Tests/">
-    <Project Path="tests/SimpleIdServer.FastFed.Host.Acceptance.Tests/SimpleIdServer.FastFed.Host.Acceptance.Tests.csproj" />
-    <Project Path="tests/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests.csproj" />
+    <Project Path="tests/FastFed/SimpleIdServer.FastFed.Host.Acceptance.Tests/SimpleIdServer.FastFed.Host.Acceptance.Tests.csproj" />
+    <Project Path="tests/FastFed/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests/SimpleIdServer.FastFed.IdentityProvider.Provisioning.Scim.Tests.csproj" />
   </Folder>
 </Solution>
